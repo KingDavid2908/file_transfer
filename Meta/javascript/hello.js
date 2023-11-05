@@ -38,3 +38,7 @@ var ugly = false; // This is a boolean
 Null means the absence of a value 
 Undefined means a variable has not been assigned a value
 */
+console.log(2 + 2); // addition operation outputs: 4
+console.log(2 - 2); // subtraction operation outputs: 0
+console.log(2 / 2); // division operation outputs: 1
+console.log(2 * 2); // multiplcation outputs: 4
