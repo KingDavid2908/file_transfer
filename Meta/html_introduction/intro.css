@@ -1,0 +1,16 @@
+div ol li {
+    font-weight: 300;
+    font-style: italic;
+}
+
+body > div > p {
+    font-style: oblique;
+    font-family: 'Times New Roman', Times, serif;
+    color: brown;
+}
+
+a:hover {
+    color: aquamarine;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: red;
+}

@@ -1,0 +1,72 @@
+h1 {
+    color: red;
+}
+
+h2.rgb {
+    color: rgb(100, 150, 200);
+}
+
+p.rgb {
+    color: rgb(100, 100, 100);
+}
+
+h2.rgba {
+    color: rgba(37, 70, 159, 0.7);
+}
+
+p.rgba {
+    color: rgba(203, 25, 82, 0.5);
+}
+
+h2.hsl {
+    color: hsl(0, 64%, 39%);
+}
+
+p.hsl {
+    color: hsl(132, 73%, 29%);
+}
+
+h2.hex {
+    color: #ff0034;
+}
+
+p.hex {
+    color: #858585;
+}
+
+h2.font-size {
+    font-size: large;
+    font-family: "Courier New", monospace;
+}
+
+p.font-size {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+
+h2.transform {
+    text-transform: uppercase;
+}
+
+p.transform {
+    text-transform: lowercase;
+}
+
+h2.decorate {
+    text-decoration: underline red solid 5px;
+}
+
+p.decorate {
+    text-decoration-line: underline;
+    text-decoration-color: green;
+    text-decoration-style: double;
+    text-decoration-thickness: 2px;
+}
+
+h2.alignment {
+    text-align: center;
+}
+
+p.alignment {
+    text-align: justify;
+}

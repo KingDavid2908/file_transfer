@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>login page</title>
+    </head>
+    <body>
+        <div>
+            <h1>Akazzy Site</h1>
+            <h2><a href="Intro.html">Home</a></h2>
+            <style>
+                body {
+                    margin: 0px 100px;
+                    padding: auto;
+                    align-content: center;
+                }
+                input[type=button] {
+                    margin: 100px;
+                    padding: 10px 20px;
+                    background-color: aqua;
+                    color: red;
+                    cursor: grab;
+                }
+                fieldset {
+                    max-width: 500px;
+                }
+            </style>
+            <form action="form_submissions/" method="post">
+                <fieldset>
+                    <label for="username">Username:</label><br>
+                    <input type="text" name="username" placeholder="johndoe" id="username">
+                </fieldset>
+                <fieldset>
+                    <label for="password">Password:</label><br>
+                    <input type="password" name="password" id="password" placeholder="Enter a password">
+                </fieldset>
+                <fieldset>
+                    <label for="email">Email Address:</label><br>
+                    <input type="email" name="email" placeholder="johndoe@abc.com" id="email">
+                </fieldset>
+                <fieldset>
+                    <label for="date_of_birth">Date of birth</label><br>
+                    <input type="date" name="date_of_birth" id="date_of_birth">
+                </fieldset>
+                <fieldset>
+                    <label for="gender"><b>Choose your gender</b></label><br>
+                    <input type="radio" name="male" id="male" class="gender" value="Male">
+                    <label for="male">Male</label>
+                    <input type="radio" name="female" id="female" class="gender" value="Female">
+                    <label for="female">Female</label>
+                    <input type="radio" name="non-binary" id="non-binary" class="gender" value="Non-binary">
+                    <label for="non-binary">Non-binary</label>
+                </fieldset>
+                <label for="profile_picture">Select an image to use as your profile.</label>
+                <input type="file" name="profile_picture" id="profile_picture"><br>
+                <textarea name="about-me" id="about-me" cols="50" rows="10" placeholder="Write a short note about yourself."></textarea><br>
+                <label for="know-us">How did you get to know about us?</label><br>
+                <select name="know-us" id="know-us">
+                    <option value="Internet">Internet Advertisement</option>
+                    <option value="Friend">From a friend</option>
+                    <option value="Now">Just knew about us</option>
+                    <option value="Celebrity">Celebrity Referral</option>
+                </select><br>
+                <label for="terms">Tick the following boxes if you agree</label><br>
+                <input type="checkbox" name="read-terms" id="read-terms" value="Yes">
+                <label for="read-terms">Have you read the terms and  Conditions?</label><br>
+                <input type="checkbox" name="agree-terms" id="agree-terms" value="Yes">
+                <label for="agree-terms">Do you agree to the Terms and Conditions?.</label><br>
+                <input type="button" value="submit">
+            </form>
+        </div>
+    </body>
+</html>

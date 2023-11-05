@@ -1,0 +1,57 @@
+body {
+    background-color: bisque;
+}
+
+header {
+    max-width: 100%;
+    max-height: 100%;
+    background-color: blue;
+    padding: 30px;
+    border-top: 10px;
+    border-bottom: 10px;
+    border-left: 10px;
+    border-right: 10px;
+    border-style: dotted;
+    border-color: aqua;
+    margin: 10px;
+    text-align: center;
+}
+
+#main {
+    max-width: 400px;
+    max-height: 400px;
+    background-color: red;
+    padding: 60px 30px 60px 30px;
+    border: 20px 10px;
+    border-style: double;
+    margin: 20px 40px 30px 10px;
+    text-align: right;
+    float: right;
+}
+
+footer {
+    max-width: 500cm;
+    max-height: 30cm;
+    background-color: blueviolet;
+    padding: 2cm 2cm;
+    border-width: 2cm;
+    border-style: dashed;
+    margin: 2cm;
+    text-align: left;
+}
+
+#inline {
+    display: inline;
+}
+
+#block {
+    display: block;
+}
+
+.child {
+    width: 50%;
+    padding: auto;
+    border: 4px solid green;
+    float: right;
+    margin: 20px;
+}
