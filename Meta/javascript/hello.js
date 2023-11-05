@@ -16,8 +16,8 @@ var personName = "David"; // This is variable assignment
 var greeting = "Hello";
 console.log(greeting, personName); // outputs "Hello David"
 personName = "Akachukwu"; // This is reassignment and you don't need to
-                          // use any initial keyword.
-console.log(greeting, personName)
+// use any initial keyword.
+console.log(greeting, personName);
 /* 
 There are seven data types in Javascript:
 1. String
@@ -30,9 +30,10 @@ There are seven data types in Javascript:
 */
 var fullName = "Chukwumam Akachukwu David"; // This is a string
 var age = 21; // This is a number
-console.log("My name is", fullName, "and I am", age, "years old.")
+console.log("My name is", fullName, "and I am", age, "years old.");
 // Outputs: My name is Chukwumam Akachukwu David and I am 21 years old.
 var handsome = true; // This is a boolean
+var ugly = false; // This is a boolean
 /*
 Null means the absence of a value 
 Undefined means a variable has not been assigned a value
