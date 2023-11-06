@@ -14,8 +14,8 @@ menu = {
 def calculate_subtotal(order):
     """ Calculates the subtotal of an order
 
-    [IMPLEMENT ME] 
-        1. Add up the prices of all the items in the order and return the sum
+    Function: 
+        Adds up the prices of all the items in the order and returns the sum
     
     Args:
         order: list of dicts that contain an item name and price
@@ -24,20 +24,17 @@ def calculate_subtotal(order):
         float = The sum of the prices of the items in the order
     """
     print('Calculating bill subtotal...')
-    ### WRITE SOLUTION HERE
     sum = 0
     for item in order:
         sum += item["price"]
     return round(sum, 2)
 
 
-    raise NotImplementedError()
-
 def calculate_tax(subtotal):
     """ Calculates the tax of an order
 
-    [IMPLEMENT ME] 
-        1. Multiply the subtotal by 15% and return the product rounded to two decimals.
+    Function:
+        Multiplies the subtotal by 15% and returns the product rounded to two decimals.
 
     Args:
         subtotal: the price to get the tax of
@@ -46,16 +43,14 @@ def calculate_tax(subtotal):
         float - The tax required of a given subtotal, which is 15% rounded to two decimals.
     """
     print('Calculating tax from subtotal...')
-    ### WRITE SOLUTION HERE
     tax = round((((subtotal)*15)/100), 2)
     return tax
 
-    raise NotImplementedError()
 
 def summarize_order(order):
     """ Summarizes the order
 
-    [IMPLEMENT ME]
+    Function:
         1. Calculate the total (subtotal + tax) and store it in a variable named total (rounded to two decimals)
         2. Store only the names of all the items in the order in a list called names
         3. Return names and total.
@@ -70,7 +65,7 @@ def summarize_order(order):
 
     """
     print_order(order)
-    ### WRITE SOLUTION HERE
+
     subtotal = calculate_subtotal(order)
     tax = calculate_tax(subtotal)
 
@@ -80,25 +75,55 @@ def summarize_order(order):
         names.append(item["name"])
     return names, total
 
-    raise NotImplementedError()
 
-# This function is provided for you, and will print out the items in an order
+
 def print_order(order):
+    """
+    Function:
+        Prints the items in an order
+
+    Args:
+        Takes in an order
+
+    Returns:
+        Returns the order
+    """
     print('You have ordered ' + str(len(order)) + ' items')
     items = []
     items = [item["name"] for item in order]
     print(items)
     return order
 
-# This function is provided for you, and will display the menu
+
 def display_menu():
+    """
+    Function:
+        It displays the menu in a nice format.
+    
+    Args:
+        It takes no argument
+
+    Returns:
+        It returns no value
+    """
     print("------- Menu -------")
     for selection in menu:
         print(f"{selection}. {menu[selection]['name'] : <9} | {menu[selection]['price'] : >5}")
     print()
 
-# This function is provided for you, and will create an order by prompting the user to select menu items
 def take_order():
+    """
+    Function:
+        1. It calls the display menu function and asks user for their order selection.
+        2. The user is allowed to make three selctions and appends the selection to an order
+        3. It returns the selected order
+
+    Args:
+        It takes no argument
+
+    Returns:
+        It returns the order the user selected which is a list
+    """
     display_menu()
     order = []
     count = 1
@@ -108,11 +133,9 @@ def take_order():
         order.append(menu[int(item)])
     return order
 
-'''
-Here are some sample function calls to help you test your implementations.
-Feel free to change, uncomment, and add these as you wish.
-'''
+
 def main():
+    """A function that calls the individual functions"""
     order = take_order()
     # print_order(order)
 
@@ -122,6 +145,7 @@ def main():
     # tax = calculate_tax(subtotal)
     # print("Tax for the order is: " + str(tax))
 
+    # It assigns items and subtotal to the summary of the user order for easy calculations
     items, subtotal = summarize_order(order)
     print("Total bill generated is:", subtotal)
 
