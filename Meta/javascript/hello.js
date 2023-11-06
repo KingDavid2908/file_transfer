@@ -56,3 +56,21 @@ console.log(2 !== "2"); //The strict inequality operation outputs: true. checks 
 console.log(true || false); // The or operator outputs: true
 console.log(true && false); // The and operator outputs: false
 console.log(! true); // The not operator outputs: false
+// addition assignment operator
+var overtime = 1;
+overtime += 2;
+overtime += 1;
+overtime += 2;
+overtime += 3;
+console.log(overtime); // 9
+// catenation assignment operator
+var longString = "";
+longString += "Once";
+longString += " upon";
+longString += " a";
+longString += " time";
+longString += "...";
+console.log(longString); // "Once upon a time..."
+// operator associativity
+var num = 10; // the value on the right is assigned to the variable name on the left
+5 > 4 > 3; // the 5 > 4 is evaluated first (to `true`), then true > 3 is evaluated to `false`, because the `true` value is coerced to `1`
