@@ -74,3 +74,4 @@ console.log(longString); // "Once upon a time..."
 // operator associativity
 var num = 10; // the value on the right is assigned to the variable name on the left
 5 > 4 > 3; // the 5 > 4 is evaluated first (to `true`), then true > 3 is evaluated to `false`, because the `true` value is coerced to `1`
+// In Javascript you can concatenate a string and a number unlike python.
