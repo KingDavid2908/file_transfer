@@ -1,4 +1,5 @@
 from divide import divide
+import random
 
 print("Hello World!")
 
@@ -192,16 +193,25 @@ file = open("introduce.txt", "r+")
 for line in file.readlines():
     new_line = line.replace("\n", "")
     print(new_line)
-file.write("This is the introduction line. \nMy name is Chukwumam Akachukwu David. \nI am a boy.\nI am 21 years old. \nI love Reahanat Chukwumam. \nThis is another line. \nI rewrote the whole introduction. \n")
-print(file.read())
+file.write("This is the introduction line. \nMy name is Chukwumam Akachukwu David. \nI am a boy.\nI am 21 years old. \nI love Reahanat Chukwumam. \nThis is another line. \nI rewrote the whole introduction because the pointer has shifted to the end of the file so it appears twice. \n")
+print(file.read(40)) # write the first 40 characters in the file.
 file.close()
 
-file = open("introduce.txt", "a")
-file.writelines(["I am a done writing.\n", "Are you sure I am done?\n",
-                "I don't think I am done\n", "Ok now I am done writing.\n"])
-file.close()
+# To add more lines to an existing file use a instead of w when opening the file.
+# writelines writes a list or takes a list as input to be written in the file
+try:
+    file = open("introduce.txt", "a")
+    file.writelines(["I am a done writing.\n", "Are you sure I am done?\n",
+                    "I don't think I am done\n", "Ok now I am done writing.\n"])
+    file.close()
+except FileNotFoundError as e:
+    print(e)
 
-file = open("introduce.txt" "r")
-print(file.readline())
-print(file.readlines())
+# readlines converts the lines to a list.
+file = open("introduce.txt", "r")
+print(file.readline(10)) # write the first 10 characters in the first line
+file.readline()
+body = file.readlines()
+print(len(body))
+print(random.choice(body))
 file.close()
