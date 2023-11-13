@@ -36,7 +36,14 @@ def range_of(*args):
 
 
 def sum_of(*args):
-    # Remember to write comment to describe the function
+    """
+    Function:
+        Adds all the items in the list. 
+    Arguments:
+        Recieves a list as an argument
+    Returns:
+        Returns an integer equal to the sum of all the items in the list.
+    """
     if len(args) == 1:
         iterable = args[0]
     elif len(args) == 2:
@@ -55,4 +62,4 @@ def sum_of(*args):
     return sum
 
 print(sum_of(range_of(1, 5)))
-print(sum_of([1, 4], 9, 6))
+print(sum_of([1, 4, 7, 11]))
