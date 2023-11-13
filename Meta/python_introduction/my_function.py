@@ -36,6 +36,7 @@ def range_of(*args):
 
 
 def sum_of(*args):
+    # Remember to write comment to describe the function
     if len(args) == 1:
         iterable = args[0]
     elif len(args) == 2:
