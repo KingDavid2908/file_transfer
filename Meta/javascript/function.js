@@ -34,7 +34,7 @@ console.log(lengthOfArray(["david", "boy", "girl", "akachukwu", "beautiful"]));
 function range(start = 0, end, step = 1) {
   var newArray = [];
   for (var x = start; x < end; x += step) {
-    newArray = newArray.concat([x]);
+    newArray.push(x);
   }
   return newArray;
 }
