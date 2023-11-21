@@ -15,4 +15,47 @@ console.log(Math.log2(4));
 console.log(Math.log10(4));
 console.log(Math.min(1, 23, 92));
 console.log(Math.max(1, 23, 92));
-console.log(Math.sin(10), Math.cos(10), Math.tan(10));
+console.log(Math.sin(Math.PI), Math.cos(90), Math.tan(10));
+
+// Want to create a function to perform an action based on a result
+function randomAction() {
+  randomVariable = Math.random();
+  randomVariable = Math.round(randomVariable * 10);
+  console.log(randomVariable);
+  if (randomVariable < 5) {
+    return false;
+  } else {
+    return true;
+  }
+}
+
+console.log("Is the random number greater than 4:", randomAction());
+
+function createRandomArray() {
+  var randomArray = [];
+  for (var x = 0; x < 5; x++) {
+    randomArray.push(Math.round(Math.random() * 10));
+  }
+  console.log(randomArray);
+  return randomArray;
+}
+
+function maxRandomArray(array) {
+  return array.reduce((a, b) => Math.max(a, b));
+}
+
+function minRandomArray(array) {
+  return array.reduce((a, b) => Math.min(a, b));
+}
+
+function createAndAnalyseArray() {
+  newArray = createRandomArray();
+  return (
+    "The min no from the array is " +
+    minRandomArray(newArray) +
+    " and the max no is " +
+    maxRandomArray(newArray)
+  );
+}
+
+console.log(createAndAnalyseArray());
