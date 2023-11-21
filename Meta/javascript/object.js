@@ -31,3 +31,15 @@ keyArray = ["iq", "lifetime", "violence", "creativity", "health"];
 for (var i = 0; i < keyArray.length; i++) {
   console.log(i + 1, ")", keyArray[i], ":", dolphin[keyArray[i]]);
 }
+
+// If the function is a property of the object it is known as method.
+var sum = {};
+sum.name = "sum";
+sum.symbol = "+";
+sum.add = function (x, y) {
+  return x + y;
+};
+
+console.log("The sum is", sum.add(2, 3));
+console.log(console);
+console.log(sum);
