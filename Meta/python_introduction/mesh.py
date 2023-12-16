@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 
 
 class FDMSteadyFlow2D:
-    def _init_(self, Nx, Ny, h_top, h_left, h_right, h_bottom):
+    def __init__(self, Nx, Ny, h_top, h_left, h_right, h_bottom):
         self.Nx = Nx
         self.Ny = Ny
         self.h_top = h_top
