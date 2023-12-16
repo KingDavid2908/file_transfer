@@ -75,6 +75,7 @@ let appleIcecream = new Icecream("apple");
 kiwiIcecream; // --> Icecream {flavor: 'kiwi', meltIt: ƒ}
 appleIcecream; // --> Icecream {flavor: 'apple', meltIt: ƒ}
 
+/*
 new Date();
 new Error();
 new Map();
@@ -82,3 +83,4 @@ new Promise();
 new Set();
 new WeakSet();
 new WeakMap();
+*/
