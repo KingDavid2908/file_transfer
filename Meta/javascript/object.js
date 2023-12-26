@@ -43,3 +43,11 @@ sum.add = function (x, y) {
 console.log("The sum is", sum.add(2, 3));
 console.log(console);
 console.log(sum);
+
+let bird = {
+  hasWings: true,
+  canFly: true,
+  hasFeathers: true,
+};
+
+let eagle = Object.create(bird);
