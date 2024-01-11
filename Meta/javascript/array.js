@@ -2,6 +2,10 @@ var emptyArray = [];
 
 var phoneArray = ["Apple", "Samsung", "Tecno", "Infinix", "Huawei"];
 
+for (var phone of phoneArray) {
+  console.log(phone);
+}
+
 for (var x = 0; x < phoneArray.length; x++) {
   console.log(phoneArray[x]);
 }
@@ -27,3 +31,7 @@ function convertArrayToString(array) {
 }
 
 console.log("The array consists of", convertArrayToString(gadgetArray));
+
+for (var item in gadgetArray) {
+  console.log(item);
+}
