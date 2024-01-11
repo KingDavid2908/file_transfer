@@ -51,3 +51,44 @@ let bird = {
 };
 
 let eagle = Object.create(bird);
+
+let books = {
+  Jonathan: "How to last 30mins",
+  David: "How to be rich in 2024",
+};
+
+let key = Object.keys(books);
+let value = Object.values(books);
+let entry = Object.entries(books);
+console.log(key, value, entry);
+
+//for-of is more reliable than for-in since the it iterates only over the object and not its prototype.
+for (authorName of key) {
+  console.log(authorName);
+}
+
+for (prop in books) {
+  console.log(prop);
+}
+
+for (topArray of entry) {
+  for (item of topArray) {
+    console.log(item);
+  }
+}
+
+const car = {
+  engine: true,
+  speed: "slow",
+};
+
+const sportsCar = Object.create(car);
+sportsCar.speed = "fast";
+
+for (props in sportsCar) {
+  console.log(props);
+}
+
+// for (props of Object.keys(sportsCar)) {
+//   console.log(props);
+// }
