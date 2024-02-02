@@ -89,6 +89,6 @@ for (props in sportsCar) {
   console.log(props);
 }
 
-// for (props of Object.keys(sportsCar)) {
-//   console.log(props);
-// }
+for (props of Object.keys(sportsCar)) {
+  console.log(props);
+}
